@@ -1,4 +1,4 @@
-module go-lang-training/print
+module newdisplay
 
 go 1.19
 
