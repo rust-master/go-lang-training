@@ -10,6 +10,8 @@
 - Functions
 - Multiple Returns Values
 - Project Scope
+- Maps
+- Pointers
 
 <hr>
 
