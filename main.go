@@ -18,8 +18,20 @@ func main() {
 	// standardLibrary()
 	// loops()
 	//booleansAndConditions()
-	var nums [5]int = [5]int{1,3,4,5,6}
-	findEvenFromArray(nums[:], printEven)
+	
+	// var nums [5]int = [5]int{1,3,4,5,6}
+	// findEvenFromArray(nums[:], printEven)
+
+	sum, sub := getMutlipleReturns(60, 30)
+	fmt.Printf("Sum is %v and sub is %v\n", sum, sub)
+	
+}
+
+func getMutlipleReturns(num1 int, num2 int) (int, int) {
+	sum := num1 + num2
+	sub := num1 - num2
+
+	return sum, sub
 }
 
 func printEven(){
