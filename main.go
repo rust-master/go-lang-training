@@ -26,5 +26,6 @@ func main() {
 	// sum, sub := getMutlipleReturns(60, 30)
 	// fmt.Printf("Sum is %v and sub is %v\n", sum, sub)
 	
+	maps()
 }
 
