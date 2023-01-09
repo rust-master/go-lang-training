@@ -27,6 +27,9 @@ func main() {
 	// fmt.Printf("Sum is %v and sub is %v\n", sum, sub)
 	
 	// maps()
-	pointers()
+	// pointers()
+
+	mybill := structAndCustomTypes("Zaryab")
+	fmt.Println(mybill)
 }
 

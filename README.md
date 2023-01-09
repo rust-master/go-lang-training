@@ -12,6 +12,7 @@
 - Project Scope
 - Maps
 - Pointers
+- Structs & Custom Types
 
 <hr>
 
