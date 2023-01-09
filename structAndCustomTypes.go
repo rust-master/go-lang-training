@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // struct (custom types)
 type bill struct {
 	name string
@@ -7,10 +9,27 @@ type bill struct {
 	tip float64
 }
 
+// Receiver Functions
+func (b bill) format() string {
+	fs := "Bill breakdown: \n"
+	var total float64 = 0
+
+	// list items
+	for k, v := range b.items {
+		fs += fmt.Sprintf("%-25v ....%v \n", k+":", v)
+		total += v
+	}
+
+	// total
+	fs += fmt.Sprintf("%-25v ....$%0.2f", "total:", total)
+
+	return fs
+}
+
 func structAndCustomTypes(name string) bill {
 	b := bill{
 		name: name,
-		items: map[string]float64{},
+		items: map[string]float64{"pie": 5.99, "cake": 3.99},
 		tip: 0,
 	}
 

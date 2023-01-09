@@ -13,6 +13,7 @@
 - Maps
 - Pointers
 - Structs & Custom Types
+- Receiver Functions
 
 <hr>
 
