@@ -17,7 +17,22 @@ func main() {
 	// arraysAndSlices()
 	// standardLibrary()
 	// loops()
-	booleansAndConditions()
+	//booleansAndConditions()
+	var nums [5]int = [5]int{1,3,4,5,6}
+	findEvenFromArray(nums[:], printEven)
+}
+
+func printEven(){
+	fmt.Println("even")
+}
+
+func findEvenFromArray(nums []int, f func()) {
+	for i :=0; i < len(nums); i++ {
+		if nums[i]%2 == 0 {
+			fmt.Printf("%v is the ", nums[i])
+			f()
+		}
+	}
 }
 
 func booleansAndConditions() {
