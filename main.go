@@ -10,6 +10,9 @@ func main() {
 	fmt.Println("Hi, Go Lang")
 	fmt.Println(quote.Go())
 
+	// To Run:
+	// go run main.go filename.go
+
 	// variablesStringNums()
 	// printingFormattingStrings()
 	// arraysAndSlices()
