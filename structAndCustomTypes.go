@@ -10,7 +10,7 @@ type bill struct {
 }
 
 // Receiver Functions
-func (b bill) format() string {
+func (b *bill) format() string {
 	fs := "Bill breakdown: \n"
 	var total float64 = 0
 
@@ -20,8 +20,11 @@ func (b bill) format() string {
 		total += v
 	}
 
+	// tip
+	fs += fmt.Sprintf("%-25v ....$%0.2f\n", "tip:", b.tip)
+
 	// total
-	fs += fmt.Sprintf("%-25v ....$%0.2f", "total:", total)
+	fs += fmt.Sprintf("%-25v ....$%0.2f", "total:", total + b.tip)
 
 	return fs
 }
@@ -34,4 +37,23 @@ func structAndCustomTypes(name string) bill {
 	}
 
 	return b
+}
+
+func newBill(name string) bill {
+	b := bill{
+		name: name,
+		items: map[string]float64{},
+		tip: 0,
+	}
+
+	return b
+}
+
+func (b *bill) updateTip(tip float64) {
+	b.tip = tip  // automatice dereference by go lang
+}
+
+// Receiver Functions with Pointers
+func (b *bill) addItems(name string, price float64) {
+	b.items[name] = price
 }

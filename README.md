@@ -14,6 +14,7 @@
 - Pointers
 - Structs & Custom Types
 - Receiver Functions
+- Receiver Functions with Pointers
 
 <hr>
 

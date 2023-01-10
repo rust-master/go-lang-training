@@ -29,7 +29,11 @@ func main() {
 	// maps()
 	// pointers()
 
-	mybill := structAndCustomTypes("Zaryab's bill")
+	// mybill := structAndCustomTypes("Zaryab's bill")
+	mybill := newBill("Zaryab's bill")
+	mybill.updateTip(10)
+	mybill.addItems("soup", 4.50)
+	mybill.addItems("tea", 5.10)
 	fmt.Println(mybill.format())
 }
 
