@@ -15,6 +15,7 @@
 - Structs & Custom Types
 - Receiver Functions
 - Receiver Functions with Pointers
+- User Input
 
 <hr>
 
