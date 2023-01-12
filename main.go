@@ -38,16 +38,31 @@ func main() {
 
 	// userInput()
 
-	shapes := []shape{
-		square{length: 15.2},
-		circle{radius: 7.5},
-		circle{radius: 12.3},
-		square{length: 4.9},
-	}
+	// shapes := []shape{
+	// 	square{length: 15.2},
+	// 	circle{radius: 7.5},
+	// 	circle{radius: 12.3},
+	// 	square{length: 4.9},
+	// }
 
-	for _, v := range shapes {
-		printShapeInfo(v)
-		fmt.Println("---")
-	}
+	// for _, v := range shapes {
+	// 	printShapeInfo(v)
+	// 	fmt.Println("---")
+	// }
+
+	// Goroutines
+	// go doSomething(10) // go statement before a function creates a goroutine
+    // go doSomething(5)
+    // time.Sleep(10*time.Second)
+
+
+	// Channels
+	c := make(chan int)
+    go doSomethingChannel(10, c)
+    go doSomethingChannel(20, c)
+    go doSomethingChannel(30, c)
+    
+    x, y, z := <-c, <-c, <-c
+    fmt.Println(x, y, z)
 }
 

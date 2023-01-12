@@ -20,6 +20,7 @@
 
 ## Concurrency in Go
 - Goroutines
+- Channels
 
 <hr>
 
