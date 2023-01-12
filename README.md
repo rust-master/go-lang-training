@@ -18,6 +18,9 @@
 - User Input
 - Interfaces
 
+## Concurrency in Go
+- Goroutines
+
 <hr>
 
 #### Course Credit: The Net Ninja 
