@@ -16,6 +16,7 @@
 - Receiver Functions
 - Receiver Functions with Pointers
 - User Input
+- Interfaces
 
 <hr>
 
