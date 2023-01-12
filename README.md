@@ -18,12 +18,12 @@
 - User Input
 - Interfaces
 
-## Concurrency in Go
-- Goroutines
-- Channels
-
 <hr>
 
 #### Course Credit: The Net Ninja 
 
 [Golang Course - Youtube Videos Link](https://www.youtube.com/watch?v=etSN4X_fCnM&list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM&index=1)
+
+## Concurrency in Go
+- Goroutines
+- Channels
