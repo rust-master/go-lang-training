@@ -1,4 +1,4 @@
-# Training Go Lang
+## Training Go Lang
 
 - Go Intro
 - Variables, String & Numbers
